@@ -1,18 +1,26 @@
 import java.util.Scanner;
 
+// Inputs from terminal to specify calculators behavior
+
 public class App {
-    private static final Scanner inputScanner = new Scanner(System.in);
+    static final Scanner inputScanner = new Scanner(System.in);
 
-    private static String getString(String prompt) {
-        System.out.println(prompt);
-    }
+    // private static String getString(String prompt) {
+    //     System.out.println(prompt);
+    //     return;
+    // }
+    
+    // private static double getDouble(String prompt) {
+    //     System.out.println(prompt);
+    //     return;
+    // }
 
-    private static double getDouble(String prompt) {
-        System.out.println(prompt);
-    }
+    
 
     public static void main(String[] args) {
-        System.out.println("Hello World");
-        
+        double num1 = 5;
+        double num2 = 3;
+        Calculator calc = new Calculator();
+        calc.add(num1, num2);
     }
 }
